@@ -1,12 +1,30 @@
+/*todo GENERAL*/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 body {
+
     font-family: 'Raleway', 'Arial', sans-serif;
+    background: url("../../assets/images/bg-image-s1.jpg") no-repeat top center;
+    background-size: 1920px;
 }
 
+.wrapper {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1600px;
+
+}
+
+
 a {
+    text-decoration: none;
     display: inline-block;
+}
+
+li {
+    list-style-type: none;
 }
 
 .visually-hidden {
@@ -17,24 +35,27 @@ a {
     margin: -1px;
 }
 
+/*todo header div.block*/
+
 .block__row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /*margin: 30px auto;*/
     /*width: 1580px;*/
-    height: 80px;
-    border: 1px solid black;
+    min-height: 80px;
+    /*border: 1px solid black;*/
 }
 
 .block__column {
-    min-width: 200px;
-    margin: 5px;
-    border: 1px dashed red;
+    height: 80px;
+    padding: 5px 10px;
+    /*border: 1px dashed red;*/
 }
 
 .schedule > p {
+    margin: 9px auto;
     /* Пн-Сб: c 10:00 до 20:00 Выходной: воскресенье */
     font-style: normal;
     font-weight: 500;
@@ -49,6 +70,7 @@ a {
 }
 
 .order-a-layout > p {
+    margin-left: 10px;
     width: 211px;
     height: 21px;
     font-style: normal;
@@ -91,20 +113,144 @@ a {
 }
 
 .button > button {
-    transition: box-shadow 0.5s ease;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
     width: 238px;
     height: 64px;
     background: #319F1C;
-    box-shadow: 3px 4px 6px #174c0f;
+    box-shadow: 3px 4px 5px #64BC45;
     border-radius: 6px;
+    color: black;
 }
 
 .button > button:hover {
-    transition: box-shadow 0.5s ease;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
     width: 238px;
     height: 64px;
     background: #319F1C;
-    box-shadow: none;
+    box-shadow: 0 0 1px #64BC45;
     border-radius: 6px;
     cursor: pointer;
+    color: white;
+}
+
+/*todo header div.nav*/
+
+ul.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    height: 64px;
+    background: linear-gradient(90deg, rgba(246, 246, 246, 0) 1.47%, rgba(163, 210, 155, 0.92) 7.25%, #319F1C 14.68%, #309E1B 50.68%, #319F1C 84.33%, rgba(147, 202, 137, 0.79) 91.68%, rgba(246, 246, 246, 0) 99.05%);
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.nav a {
+    padding: 5px;
+    margin: 0 10px;
+    min-width: 50px;
+    color: black;
+    text-align: center;
+    box-shadow: 3px 4px 6px #1c2b01;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+    border-radius: 3px;
+}
+
+.nav a:hover {
+    padding: 5px;
+    margin: 0 10px;
+    min-width: 50px;
+    color: ghostwhite;
+    text-align: center;
+    box-shadow: 1px 1px 1px #1b2f02;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+    border-radius: 3px;
+}
+
+/*todo main section.request*/
+
+.request {
+    margin-left: 30px;
+}
+
+.request p:nth-child(2) {
+    margin-bottom: 0;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 43px;
+}
+
+.request span {
+    color: #319F1C;
+}
+
+.request p:nth-child(3) {
+    margin-top: 6px;
+    font-family: 'Raleway', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.request form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 805px;
+    min-height: 212px;
+    padding: 5px;
+    background: white;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.request form input, .request form select {
+    margin: 7px;
+    width: 342px;
+    height: 40px;
+    border: 1px solid #319F1C;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #595959;
+    padding-left: 20px;
+}
+
+.request form button {
+    margin: 7px;
+    width: 342px;
+    height: 40px;
+    background: #319F1C;
+    box-shadow: 3px 4px 5px #64BC45;
+    border-radius: 3px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.request form button:hover {
+    width: 342px;
+    height: 40px;
+    background: #319F1C;
+    box-shadow: 0 0 1px #64BC45;
+    border-radius: 3px;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.request form p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
 }
