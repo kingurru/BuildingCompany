@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+body {
+    font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+a {
+    display: inline-block;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.block__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /*margin: 30px auto;*/
+    /*width: 1580px;*/
+    height: 80px;
+    border: 1px solid black;
+}
+
+.block__column {
+    min-width: 200px;
+    margin: 5px;
+    border: 1px dashed red;
+}
+
+.schedule > p {
+    /* Пн-Сб: c 10:00 до 20:00 Выходной: воскресенье */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+}
+
+.order-a-layout {
+    display: flex;
+    align-items: center;
+}
+
+.order-a-layout > p {
+    width: 211px;
+    height: 21px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border-bottom: 1px solid black;
+}
+
+.order-a-layout p:hover {
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.order-a-layout p span {
+    font-family: 'Arial', sans-serif;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts p {
+    margin: 5px;
+    /* +7 (915) 168-55-50 */
+    width: 203px;
+    height: 27px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.button > button {
+    transition: box-shadow 0.5s ease;
+    width: 238px;
+    height: 64px;
+    background: #319F1C;
+    box-shadow: 3px 4px 6px #174c0f;
+    border-radius: 6px;
+}
+
+.button > button:hover {
+    transition: box-shadow 0.5s ease;
+    width: 238px;
+    height: 64px;
+    background: #319F1C;
+    box-shadow: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
