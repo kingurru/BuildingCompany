@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 body {
-
     font-family: 'Raleway', 'Arial', sans-serif;
     background: url("../../assets/images/bg-image-s1.jpg") no-repeat top center;
     background-size: 1920px;
@@ -27,6 +26,11 @@ li {
     list-style-type: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -38,6 +42,7 @@ li {
 /*todo header div.block*/
 
 .block__row {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -253,4 +258,46 @@ ul.nav {
     margin: 0;
     font-size: 12px;
     line-height: 14px;
+}
+
+img.gift-big {
+    position: relative;
+
+    left: 720px;
+    top: -300px;
+}
+
+img.gift-small {
+    position: relative;
+    left: -140px;
+    top: -100px;
+    transform: rotate(+30deg);
+}
+
+img.spatula {
+    position: relative;
+    left: 140px;
+    top: -309px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 80px;
+    height: 280px;
+    top: 30%;
+    right: 0;
+}
+
+.sidebar ul a {
+    margin-bottom: 10px;
+    width: 80px;
+    height: 60px;
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+}
+
+.sidebar ul a img {
+    padding: 10px;
 }
