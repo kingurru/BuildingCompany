@@ -12,9 +12,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 20px;
     max-width: 1600px;
-
 }
 
 
@@ -83,7 +81,7 @@ ul {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #5a5a5a;
 }
 
 .order-a-layout p:hover {
@@ -327,8 +325,7 @@ img.spatula {
 .services h2 {
     margin: 0 auto;
     width: 238px;
-    height: 52px;
-    font-family: 'Montserrat', 'sans-serif';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
@@ -343,8 +340,7 @@ img.spatula {
 }
 
 .block-left p {
-
-    margin: 20px 10px 20px 0;
+    margin: 20px 5px 20px 5px;
     width: 373px;
     height: 42px;
     border: 1px solid #319F1C;
@@ -352,10 +348,77 @@ img.spatula {
     border-radius: 3px;
 }
 
-.block-left p img {
-    color: black;
-    stroke: black;
-    fill: black;
+.block-left img {
     margin: 5px 20px;
     vertical-align: middle;
+}
+
+.block-right {
+    float: left;
+    margin-top: 90px;
+}
+
+.block-right p {
+    margin: 20px 5px 20px 5px;
+    width: 373px;
+    height: 42px;
+    border: 1px solid #319F1C;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.block-right p img {
+    margin: 5px 20px;
+    vertical-align: middle;
+}
+
+.house-line {
+    float: left;
+}
+
+.well {
+    display: block;
+    float: left;
+    margin-top: 80px;
+}
+
+.services p:hover {
+    background: #319F1C;
+    cursor: pointer;
+    color: white;
+}
+
+.wrapper-services {
+    margin: 0 auto;
+    max-width: 1750px;
+    padding-left: 100px;
+}
+
+@media (max-width: 1750px) {
+    .well {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1540px) {
+    .house-line {
+        display: none;
+    }
+
+    .services h2 {
+        margin-top: 100px;
+    }
+
+    .block-left, .block-right{
+        float: none;
+        margin: 0 auto;
+    }
+    .services p {
+        padding: 0;
+        margin: 20px auto;
+    }
+    .wrapper-services {
+        padding-left: 0;
+    }
 }
