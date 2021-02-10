@@ -77,15 +77,24 @@
 			<p>Акция действительна до конца месяца!</p>
 
 			<form action="#" method="post">
-				<input type="text" placeholder="Ваше имя" required>
-				<select name="service" id="">
-					<option value="">Ремонт кровли</option>
-					<option value="">Замена кровли</option>
-					<option value="">Установка стеклопакетов</option>
-					<option value="">Демонтаж труб</option>
-				</select>
-				<input type="tel" placeholder="Номер телефона" required>
-				<button type="submit">Отправить</button>
+				<label>
+					<input type="text" placeholder="Ваше имя" required>
+				</label>
+				<label>
+					<select name="service">
+						<option disabled selected>Выберите услугу</option>
+						<option value="work1">Ремонт кровли</option>
+						<option value="work2">Замена кровли</option>
+						<option value="work3">Установка стеклопакетов</option>
+						<option value="work4">Демонтаж труб</option>
+					</select>
+				</label>
+				<label>
+					<input type="tel" placeholder="Номер телефона" required>
+				</label>
+				<label>
+					<input class="submit" type="submit" value="Отправить">
+				</label>
 				<p>Ваши данные не будут переданы третьим лицам</p>
 			</form>
 

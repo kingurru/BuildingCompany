@@ -231,7 +231,11 @@ ul.nav {
     padding-left: 20px;
 }
 
-.request form button {
+.request form select {
+    padding-left: 16px;
+}
+
+.request form .submit {
     margin: 7px;
     width: 342px;
     height: 40px;
@@ -242,7 +246,7 @@ ul.nav {
     transition: all 0.3s ease;
 }
 
-.request form button:hover {
+.request form .submit:hover {
     width: 342px;
     height: 40px;
     background: #319F1C;
