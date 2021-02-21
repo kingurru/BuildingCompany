@@ -547,7 +547,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
 }
 
@@ -557,11 +557,9 @@ footer {
 }
 
 .footer-nav [type="button"] {
-
     width: 238px;
     height: 64px;
     margin: 10px;
-
     background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid #818181;
     box-sizing: border-box;
@@ -574,11 +572,9 @@ footer {
     width: 237px;
     height: 42px;
     margin: 10px;
-
     text-align: center;
     font-size: 14px;
     line-height: 21px;
-
     color: #FFFFFF;
 }
 
