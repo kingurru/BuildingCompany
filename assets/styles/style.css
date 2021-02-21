@@ -4,17 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 body {
-    background-size: 1920px 2514px;
-    background: url("../../assets/images/bg.jpg") no-repeat top center;
+    background: /*linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,0.01)),*/ url("../../assets/images/bg.jpg") no-repeat top center;
     font-family: 'Raleway', 'Arial', sans-serif;
+    background-size: 1920px;
 }
 
 
 .wrapper {
     margin: 0 auto;
     max-width: 1600px;
+    padding: 0 50px;
 }
-
 
 a {
     text-decoration: none;
@@ -60,12 +60,10 @@ ul {
 
 .schedule > p {
     margin: 9px auto;
-    /* Пн-Сб: c 10:00 до 20:00 Выходной: воскресенье */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
 }
 
 .order-a-layout {
@@ -99,7 +97,6 @@ ul {
 
 .contacts p {
     margin: 5px;
-    /* +7 (915) 168-55-50 */
     width: 203px;
     height: 27px;
     font-family: 'Montserrat', sans-serif;
@@ -107,7 +104,6 @@ ul {
     font-weight: 800;
     font-size: 22px;
     line-height: 27px;
-    /* identical to box height */
 }
 
 .social-icon {
@@ -140,6 +136,7 @@ ul {
 /*todo header div.nav*/
 
 ul.nav {
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -180,7 +177,7 @@ ul.nav {
 /*todo main section.request*/
 
 .request {
-    margin-left: 30px;
+    margin-bottom: 250px;
 }
 
 .request p:nth-child(2) {
@@ -198,6 +195,7 @@ ul.nav {
 
 .request p:nth-child(3) {
     margin-top: 6px;
+    margin-bottom: 30px;
     font-family: 'Raleway', 'sans-serif';
     font-style: normal;
     font-weight: normal;
@@ -213,8 +211,9 @@ ul.nav {
     align-items: center;
     align-content: center;
     max-width: 805px;
-    min-height: 212px;
+    min-height: 200px;
     padding: 5px;
+    padding-top: 20px;
     background: white;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
@@ -233,6 +232,7 @@ ul.nav {
 
 .request form select {
     padding-left: 16px;
+
 }
 
 .request form .submit {
@@ -258,12 +258,11 @@ ul.nav {
 }
 
 .request form p {
-    margin: 0;
+    margin: 20px;
     font-size: 12px;
-    line-height: 14px;
 }
 
-img.gift-big {
+/*img.gift-big {
     position: relative;
     left: 720px;
     top: -300px;
@@ -281,6 +280,12 @@ img.spatula {
     left: 140px;
     top: -309px;
 }
+
+img.brick {
+    position: relative;
+    right: 550px;
+    top: 200px;
+}*/
 
 .sidebar {
     position: fixed;
@@ -320,6 +325,10 @@ img.spatula {
     img.spatula {
         display: none;
     }
+
+    img.brick {
+        display: none;
+    }
 }
 
 
@@ -334,9 +343,9 @@ img.spatula {
     font-weight: 900;
     font-size: 32px;
     line-height: 52px;
-    /* identical to box height, or 162% */
     color: #363130;
 }
+
 
 .block-left {
     float: left;
@@ -345,7 +354,7 @@ img.spatula {
 
 .block-left p {
     margin: 20px 5px 20px 5px;
-    width: 373px;
+    width: 350px;
     height: 42px;
     border: 1px solid #319F1C;
     box-sizing: border-box;
@@ -364,7 +373,7 @@ img.spatula {
 
 .block-right p {
     margin: 20px 5px 20px 5px;
-    width: 373px;
+    width: 350px;
     height: 42px;
     border: 1px solid #319F1C;
     box-sizing: border-box;
@@ -377,12 +386,14 @@ img.spatula {
 }
 
 .house-line {
+    margin: 0;
     float: left;
 }
 
 .well {
     display: block;
-    float: left;
+    float: right;
+
     margin-top: 80px;
 }
 
@@ -398,14 +409,18 @@ img.spatula {
     padding-left: 100px;
 }
 
-@media (max-width: 1750px) {
+@media (max-width: 1650px) {
     .well {
         display: none;
     }
 
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1480px) {
+    .request {
+        margin-bottom: 50px;
+    }
+
     .house-line {
         display: none;
     }
@@ -414,15 +429,162 @@ img.spatula {
         margin-top: 100px;
     }
 
-    .block-left, .block-right{
+    .block-left, .block-right {
         float: none;
         margin: 0 auto;
     }
+
     .services p {
         padding: 0;
         margin: 20px auto;
     }
+
     .wrapper-services {
         padding-left: 0;
+    }
+}
+
+/*todo main section.feedback*/
+
+.feedback {
+    clear: both;
+}
+
+.feedback p:nth-child(2) {
+    margin: 100px 0 20px;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 43px;
+}
+
+.feedback p:nth-child(3) {
+    margin-top: 6px;
+    margin-bottom: 40px;
+    font-family: 'Raleway', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback form input {
+    width: 510px;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #319F1C;
+    box-sizing: border-box;
+    border-radius: 6px;
+
+    font-size: 16px;
+    color: #8A8A8A;
+}
+
+.feedback form textarea {
+    width: 510px;
+    height: 98px;
+    padding: 10px;
+
+    border: 1px solid #319F1C;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.feedback form p {
+    width: 507px;
+    height: 48px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.feedback form input.file {
+    margin: 10px 0 0;
+    padding: 0;
+    border: none;
+
+}
+
+.feedback form .submit {
+    width: 300px;
+    height: 50px;
+    background: #319F1C;
+    box-shadow: 3px 4px 5px #64BC45;
+    border-radius: 3px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.feedback form .submit:hover {
+    width: 300px;
+    height: 50px;
+    background: #319F1C;
+    box-shadow: 0 0 1px #64BC45;
+    border-radius: 3px;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/*todo footer*/
+
+footer {
+    margin: 120px auto 0;
+    min-height: 200px;
+    background: #363130;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer-nav li a {
+    padding: 10px;
+    color: white;
+}
+
+.footer-nav [type="button"] {
+
+    width: 238px;
+    height: 64px;
+    margin: 10px;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #818181;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.footer-nav .column-3 p {
+    width: 237px;
+    height: 42px;
+    margin: 10px;
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+@media (max-width: 787px) {
+    .column-1, .column-2, .column-3 {
+        margin: 0 auto;
+        width: 250px;
     }
 }

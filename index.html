@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Alfa Repair Building</title>
 	<link rel="stylesheet" href="./assets/styles/style.css">
 	<link rel="stylesheet" href="./assets/styles/normalize.css">
 </head>
 <body>
-<!--<iframe src="index.html" width="150" height="450" scrolling="yes"></iframe>-->
 <h1 class="visually-hidden">Alfa Repair Building</h1>
 <header class="header">
+
 	<div class="wrapper">
 
 		<div class="block__row">
@@ -78,29 +80,34 @@
 
 			<form action="#" method="post">
 				<label>
-					<input type="text" placeholder="Ваше имя" required>
+					<input type="text" placeholder="Ваше имя" name="name" required>
 				</label>
 				<label>
-					<select name="service">
+					<select class="list-services" name="list-services">
 						<option disabled selected>Выберите услугу</option>
-						<option value="work1">Ремонт кровли</option>
-						<option value="work2">Замена кровли</option>
-						<option value="work3">Установка стеклопакетов</option>
-						<option value="work4">Демонтаж труб</option>
+						<option value="service-1">Проектирование домов</option>
+						<option value="service-2">Монтаж кровли</option>
+						<option value="service-3">Монтаж отопления</option>
+						<option value="service-4">Обустройство скважин</option>
+						<option value="service-5">Разводка водоснабжения</option>
+						<option value="service-6">Разводка канализации</option>
+						<option value="service-7">Монтаж септиков</option>
+						<option value="service-8">Монтаж электрики</option>
 					</select>
 				</label>
 				<label>
-					<input type="tel" placeholder="Номер телефона" required>
+					<input type="tel" placeholder="Номер телефона" name="tel" required>
 				</label>
 				<label>
-					<input class="submit" type="submit" value="Отправить">
+					<input class="submit" type="submit" name="submit" value="Отправить">
 				</label>
 				<p>Ваши данные не будут переданы третьим лицам</p>
 			</form>
 
-			<img class="gift-big" src="./assets/images/gift.svg" width="177" height="141" alt="">
+			<!--<img class="gift-big" src="./assets/images/gift.svg" width="177" height="141" alt="">
 			<img class="gift-small" src="./assets/images/gift.svg" width="90" height="75" alt="">
 			<img class="spatula" src="./assets/images/spatula.svg" width="140" height="140" alt="">
+			<img class="brick" src="./assets/images/tools.svg" width="140" height="180" alt="">-->
 
 			<aside class="sidebar">
 				<ul>
@@ -115,19 +122,19 @@
 
 	<section class="services">
 		<h2>Наши услуги</h2>
-		<div class="wrapper-services">
+		<div class="wrapper">
 			<div class="block-left">
 				<p><img src="./assets/images/s2-l1.svg" width="30" height="30" alt="">Проектирование домов</p>
-				<p><img src="./assets/images/s2-l2.svg" width="30" height="30" alt="">Установка автономной канализации</p>
+				<p><img src="./assets/images/s2-l2.svg" width="30" height="30" alt="">Установка канализации</p>
 				<p><img src="./assets/images/s2-l3.svg" width="30" height="30" alt="">Разводка водоснабжения</p>
 				<p><img src="./assets/images/s2-l4.svg" width="30" height="30" alt="">Разводка канализации</p>
 			</div>
-			<img class="house-line" src="./assets/images/house-line.svg" width="674" height="498" alt="">
+			<img class="house-line" src="./assets/images/house-line.svg" width="660" height="498" alt="">
 			<div class="block-right">
-				<p><img src="./assets/images/s2-r1.svg" width="30" height="30" alt="">Проектирование домов</p>
-				<p><img src="./assets/images/s2-r2.svg" width="30" height="30" alt="">Установка автономной канализации</p>
-				<p><img src="./assets/images/s2-r3.svg" width="30" height="30" alt="">Разводка водоснабжения</p>
-				<p><img src="./assets/images/s2-r4.svg" width="30" height="30" alt="">Разводка канализации</p>
+				<p><img src="./assets/images/s2-r1.svg" width="30" height="30" alt="">Монтаж кровли</p>
+				<p><img src="./assets/images/s2-r2.svg" width="30" height="30" alt="">Обустройство скважин</p>
+				<p><img src="./assets/images/s2-r3.svg" width="30" height="30" alt="">Монтаж электрики</p>
+				<p><img src="./assets/images/s2-r4.svg" width="30" height="30" alt="">Монтаж систем отопления</p>
 			</div>
 			<img class="well" src="./assets/images/well.svg" width="212" height="498" alt="">
 
@@ -137,6 +144,26 @@
 	<section class="feedback">
 		<div class="wrapper">
 			<h2 class="visually-hidden">Обратная связь</h2>
+			<p>Не нашли то, что искали?</p>
+			<p>Заполните форму и мы перезвоним вам в течение 30 минут!</p>
+			<form action="#" method="post">
+				<label>
+					<input type="text" placeholder="Ваше имя" name="name" required>
+				</label>
+				<label>
+					<input type="tel" placeholder="Номер телефона" name="tel" required>
+				</label>
+				<label>
+					<textarea name="message" rows="5" placeholder="Ваше сообщение (необязательно)"></textarea>
+				</label>
+				<p>Если у вас есть изображение или макет дома, который вам нужен,
+					пришлите его нам. Мечты должны сбываться!<br> И мы, знаем, как исполнить вашу!</p>
+				<input class="file" type="file" name="project-house" multiple placeholder="Прикрепить файл">
+				<label>
+					<input class="submit" type="submit" value="Отправить">
+				</label>
+
+			</form>
 
 		</div>
 
@@ -144,7 +171,35 @@
 </main>
 
 <footer class="footer">
-
+	<div class="wrapper">
+		<div class="footer-nav">
+			<ul class="column-1">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Расчёт стоимости</a></li>
+				<li><a href="#">Консультация архитектора</a></li>
+			</ul>
+			<ul class="column-2">
+				<li><a href="#">Экскурсия на объект</a></li>
+				<li><a href="#">3D-макет дома</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="column-3">
+				<label>
+					<input type="button" name="order a call" value="Заказать звонок">
+				</label>
+				<p>Или свяжитесь с нами через социальных сети</p>
+				<div class="social-icon">
+					<a href="#"><img src="./assets/images/social-whatsapp.svg" alt=""></a>
+					<a href="#"><img src="./assets/images/social-telegram.svg" alt=""></a>
+					<a href="#"><img src="./assets/images/social-viber.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
 </body>
 </html>
