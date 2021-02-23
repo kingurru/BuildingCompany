@@ -409,7 +409,7 @@ img.brick {
     padding-left: 100px;
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1690px) {
     .well {
         display: none;
     }
